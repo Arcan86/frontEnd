@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Josefin+Sans:wght@300&family=Orbitron:wght@500&display=swap');
+
+  h1, p{
+    font-family: 'Inconsolata', monospace;
+}

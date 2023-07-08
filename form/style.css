@@ -1,0 +1,231 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Inter&family=Josefin+Sans:wght@300&family=Open+Sans:ital@0;1&family=Orbitron:wght@500&family=Playfair+Display:wght@500&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: white;
+    
+    
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(assets/pista.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 25px;
+}
+
+
+
+
+header {
+    position: absolute;
+    
+    left: 0;
+    width: 100%;
+    padding: 3px;
+    
+    
+    background: rgba(0, 0, 0, 0.4);
+}
+h1{
+    background-color: rgba(220, 252, 38, 0.4);
+    color: black;
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+}
+
+
+.navbar{
+    margin-left: 700px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -50px;
+    height: 50px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 27px;
+    
+    
+}
+
+nav a:hover{
+    color: red;
+}
+
+.arca{
+    color: red;
+}
+
+
+
+
+.descr{
+    
+    margin-top: 25px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.descr a{
+    color: yellow;
+}
+
+
+
+.foto:hover{
+    transform: scale(1.5);
+    box-sizing: hidden;
+    transition: .3s;
+    
+}
+
+
+.opzioni{
+    color: black;
+}
+
+form{
+    margin-top: 70px;
+    color: white;
+    font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 18px;
+}
+
+.portof{
+    border: 2px solid black;
+    box-shadow: 3px 3px 10px;
+    padding: 5px;
+    width: 39%;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    float: left;  
+}
+
+
+.provasustrada{
+    
+    border: 2px solid black;
+    box-shadow: 3px 3px 10px;
+    padding: 5px;
+    width: 39%;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    margin-top: -42px;
+    margin-left: 500px;
+}
+
+main{
+    font-size: 20px;
+    padding: 15px;
+    letter-spacing: 2px;
+    
+    
+}
+input{
+    
+    background-color: transparent;
+    border-bottom: 3px solid rgba(236, 14, 14);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    
+}
+
+button{
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    
+    color: black;
+    background-color: yellow;
+    color: red;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: red;
+    color: yellow;
+}
+.logo{
+    
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid yellow;
+    width: 22%;
+    height: 25%;
+    background-color: black;
+    font-size: 36px;
+    color: red;
+    
+    
+}
+
+.name{
+    color: yellow;
+}
+.box{
+    border: transparent;
+    padding: 3px;
+    
+    width: 80%;
+    
+}
+
+.audio{
+    position: absolute;
+    margin-top: 20px;
+}
+
+select, option{
+    color: red;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.pannel{
+    padding: 10px;
+    margin-top: 30px;
+}
+.pannel p{
+    font-size: 25px;
+}
+
+.icons{
+    font-size: 40px;
+    letter-spacing: 30px;
+}
+
+ion-icon:hover{
+    color: red;
+}
+
+fieldset{
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 15px;
+    word-spacing: 3px;
+    
+    
+    
+}
+:placeholder-shown{
+    margin-top: 30px;
+    font-size: 25px;
+}

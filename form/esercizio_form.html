@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+
+<body>
+    
+    <header>
+        <p class="logo"><span class="name">Ferrari~</span>Arca <img src="./assets/logo.jpg" alt="" width="60px"></p>
+        <nav class="navbar">
+            
+            <a href="./home.html" target="_blank">HOME</a>
+            <a href="#">DICONO DI NOI</a>
+            <a href="#">SERVIZI</a>
+            <a href="#">CONTATTI</a>
+            
+        </nav>
+        
+        
+        
+    </header>
+    
+    <main>
+        
+        <h1 class="titolo">Ferrari<span class="arca">~Arca</span></h1>
+        
+        <p class="descr">L'unica piattaforma in cui potrai noleggiare o acquistare una Ferrari in pochi semplici <a href="#iscrizione">click.</a> Modello garantito e foto reali. Consegna/ritiro personalizati ovunque in Italia.</p>
+        
+        <br>  
+        
+        <h2>L'ultima novità</h2>
+        <hr>
+        <br>
+        <section class="box">
+            <figure>
+                <div class="portof">
+                    <details> <summary>Che modello è?</summary>La Ferrari Portofino (nome in codice F164) è un'autovettura sportiva di tipo gran turismo con carrozzeria coupé-cabriolet</details>
+                    <img class="foto" src="./assets/ferrari_portofino.jpg" alt="ferrari" width="400px">
+                    <br>
+                    <p>Scarica <a href="#">Brochure</a>
+                    </p>
+                    <time>20/08/2023</time><br>
+                </div>
+                <br>
+                
+                <br>
+                
+                <div class="provasustrada">
+                    
+                    <details>Ferrari Portofino M (2021): la prova della spider GT 2+ di Maranello</details>
+                    <video class="video" controls width="400" src="./video/ferrari_portofino.mp4"></video>
+                    <p>Scarica <a href="./video/ferrari_portofino.mp4">mp4</a>
+                    </div>  
+                </p>
+                
+                <div class="audio"><figcaption>Ascolta il motore</figcaption>
+                    <br>
+                    <audio src="./audio/rombo.mp3" controls>
+                    <a href="./audio/rombo.mp3"></a>
+                </audio>
+            </div>
+            
+            
+            
+            
+        </figure>
+        
+        
+        
+        
+    </section>
+</main>
+<br>
+<hr>
+
+<section class="pannel">
+    <form action="" >
+        <div class="sceglimodello">
+            <P>Scegli la tua ferrari</P><br>
+            
+            <select name="opt">
+                <option value="0">seleziona</option>
+                <option value="1">FERRARI 360</option>
+                <option value="2">FERRARI TESTA ROSSA</option>
+                <option value="3">FERRARI PORTOFINO</option>
+                <option value="4">FERRARI GT</option>
+                <option value="5">FERRARI SF90</option>
+            </select> 
+            
+        </div>
+        
+        <br>
+        
+        <fieldset>
+            
+            <legend>
+                Aggiungi un opzione
+            </legend>
+            
+            <br>
+            
+            <p>Guida su: </p>
+            
+            <br>
+            
+            <label for="strada">Strada</label>
+            <input type="checkbox" name="strada">&nbsp;&nbsp;&nbsp;
+            <label for="circuito">Circuito</label>
+            <input type="checkbox" name="circuito" checked>
+            <br><br>
+            <p>Tempo di noleggio: </p>
+            <br><br>
+            <label for="ora">1 ora</label>
+            <input type="checkbox" name="un_ora" checked>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="giorno">1 giorno</label>
+            <input type="checkbox" name="ora">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="settimana">1 settimana</label>
+            <input type="checkbox" name="settimana">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="mese">1 mese</label>
+            <input type="checkbox" name="mese">
+            
+        </fieldset>
+        
+        <br>
+        
+        <fieldset>
+            <legend id="iscrizione">Dati di Iscrizione</legend>
+            
+          <div class="dati"> 
+            <div>
+                <label for="name"></label>
+                <input type="text" name="nome" id="nome" placeholder="Nome" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="cognome"></label>
+                <input type="text" name="cognome" id="cognome" placeholder="Cognome">
+            </div><br>
+            
+            <div>
+                <label for="data">Data di nascita</label>
+                <input type="date" name="data" id="data"><br>
+                <br>
+                <label for="sesso">sesso :</label>
+                <input type="radio" name="sex" value="male" checked> <span>maschio</span>
+                <input type="radio" name="sex" value="female"> <span>femmina</span>
+            </div>
+            
+            
+            <br>
+            <div>
+                <label for="email">email: </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">password : </label>
+                <input type="password" name="password" id="password" required minlength="8" placeholder="min. 8 caratteri">
+            </div>
+            <br>
+            <div>
+                <div>
+                    <label for="phone">Numero di cellulare:</label>
+                    <input type="tel" id="phone" name="phone" placeholder=" formato 123-456-7890"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required>
+                    
+                </div>
+                <br>
+                <label for="check">accetto i termini di condizione</label>
+                <input type="checkbox" name="check" value="yes"><br>
+                <br>
+                <div>
+                    <button>Invia</button>
+                </div>
+            </section>
+        </div> 
+
+            <br>
+            
+            <footer>
+                <p>
+                    <strong>ferrari~arca.com</strong> Tel : +39 05 4589 1157 &copy; Copyright 2023</p>
+                    
+                    &nbsp;
+                    <div class="icons">
+                        <a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-Instagram"></ion-icon></a>
+                        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F"  target="_blank"><ion-icon name="logo-Twitter"></ion-icon></a>
+                        <a href="https://www.google.it/"><ion-icon name="logo-Google" target="_blank"></ion-icon></a>
+                        <a href="https://www.skype.com/it/"><ion-icon name="logo-Skype" target="blank"></ion-icon></a>
+                        
+                        
+                    </div>
+                    
+                </footer>
+                <br>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+                
+                
+                
+                
+            </body>
+            </html>
