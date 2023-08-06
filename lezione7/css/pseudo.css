@@ -1,0 +1,29 @@
+button:hover{
+    color: rgb(128, 255, 0);
+    background-color: yellow;
+}
+input:checked{
+    color: red;
+    outline: 10px solid pink;
+}
+
+input:enabled{
+    background-color: yellow;
+    font-size: 20px;
+    color: red ;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+input:focus{
+    background-color: rgb(123, 0, 255);
+    font-size: 20px;
+    color: red ;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+input:disabled{
+background-color: rgb(13, 12, 12) ;
+   
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            color: blue;
+        }
+
+        div + h2{
+            background-color: red;
+            color: white;
+        }
+
+        h2 ~ p{
+            border: 1px dotted black;
+        }
+
+        section>h2{
+           text-transform: uppercase;
+        }
+
+        section > p{
+            background-color: yellow;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <!-- TO DO
+    + aggiungere un heading 3 con sfondo rosso e testo bianco
+    font tutti sia colore blue
+    P abbiamo bordo dotted 
+    -->
+
+<!-- TODO
+       + aggiungere un heading 3 con sfondo rosso e testo bianco
+    -->
+
+    <section>
+        <h2>Heading 1 UPPERCASE</h2>
+        <p>Paragraph 1 GIALLO</p>
+        <p>Paragraph 2 GIALLO</p>
+        <div>
+          <h2>Heading 2 UPPERCASE</h2>
+          <p>Paragraph 3</p>
+          <p>Paragraph 4</p>
+        </div>
+        <h2>Heading 3</h2>
+      </section>
+</body>
+</html>

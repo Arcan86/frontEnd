@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewport</title>
+
+    <style>
+        .title > h1{
+            color: #399;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+
+        @media screen and (min-width: 500px){
+           .title > h1{
+            color: red;
+         
+           }
+
+           article{
+            display: flex;
+            border: 1px solid;
+            padding: 30px;
+            background-color: cornflowerblue;
+           }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="title">
+        <h1>Hello World</h1>
+        <article>
+            <h2>titolo articolo</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum iusto vero iure cupiditate voluptate laboriosam, in nostrum deserunt blanditiis beatae id dolorum quam quaerat consectetur repellat provident minus facilis minima.
+            </p>
+        </article>
+    </div>
+    
+</body>
+</html>

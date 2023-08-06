@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selettori</title>
+    
+    <style>
+        
+        
+        a[ title]{
+            background-color: rgb(53, 139, 0);
+        }
+        
+        a[href="http://www.google.it"]
+        {
+            background-color: blueviolet;
+        }
+        
+        a[class~="special"]
+        {font-size: 50px};
+        
+        /* selettori discendenti */
+        article p {
+            background-color: rebeccapurple;
+        }
+
+        body article p{
+            font-size: 40px;
+            background-color: yellow;
+        }
+
+        ul > li {
+            font-size: 20px;
+            background-color: blue;
+        }
+        
+    </style>
+    
+    
+    
+    
+</head>
+
+<body>
+    
+    <h1>Tipi di selettori</h1>
+    <a title="prova" href="#">Selettore con attributo</a><br>
+    <a  href="#">Selettore con attributo</a><br>
+    <a title="prova" href="http://www.google.it">Selettore con attributo</a><br>
+    <a title="prova" href="#">Selettore con attributo</a><br>
+    <a title="prova" href="#">Selettore con attributo</a><br>
+    <a class="special" title="prova" href="#">Selettore con attributo</a><br>
+    <hr>
+    <h2>discendente</h2>
+    
+    <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum, dignissimos dolore aliquam, repellendus beatae laudantium quidem qui delectus eligendi, blanditiis modi deserunt officia at labore laboriosam praesentium iusto distinctio.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum, dignissimos dolore aliquam, repellendus beatae laudantium quidem qui delectus eligendi, blanditiis modi deserunt officia at labore laboriosam praesentium iusto distinctio.</p>
+        <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum, dignissimos dolore aliquam, repellendus beatae laudantium quidem qui delectus eligendi, blanditiis modi deserunt officia at labore laboriosam praesentium iusto distinctio.</p>
+    </article>
+
+    <ul>
+        <li>Unordered item</li>
+        <li>Unordered item
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ol>
+        </li>
+        
+        <ol>
+            <li>grhh</li>
+            <li>grfh</li>
+            <li>hrh</li>
+            <li>hrfc</li>
+        </ol>
+    </ul>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+        
+    
+</body>
+</html>

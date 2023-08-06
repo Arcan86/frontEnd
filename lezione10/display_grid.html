@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;
+            grid-auto-rows: 200px;
+            gap: 15px;
+            grid-template-rows: auto auto 100px;
+        }
+        
+        .box{
+            background-color: lightsalmon;
+            padding: 30px;
+        }
+        
+        
+        .box:nth-child(1){
+            background-color: blue;
+            grid-column: 1/4;
+        }
+        .box:nth-child(2){
+            
+            grid-column: 1/3;
+            
+            
+        }
+        .box:nth-child(3){
+            
+            grid-column: 3/4;
+            
+        }
+        .box:nth-child(4){
+            
+            grid-column: 1/4;
+            
+        }
+        .nav ul{
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .nav ul li a{
+            color: yellow;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        
+        .nav ul li {
+            font-size: 20px;
+            list-style-type: none;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box nav">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        <div class="box main">2
+            
+            <h1>titolo
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt a suscipit praesentium ut eos tempora dolorum. Asperiores pariatur modi sequi tempora, soluta veritatis magnam eligendi molestias recusandae voluptatem fugiat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt a suscipit praesentium ut eos tempora dolorum. Asperiores pariatur modi sequi tempora, soluta veritatis magnam eligendi molestias recusandae voluptatem fugiat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt a suscipit praesentium ut eos tempora dolorum. Asperiores pariatur modi sequi tempora, soluta veritatis magnam eligendi molestias recusandae voluptatem fugiat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt a suscipit praesentium ut eos tempora dolorum. Asperiores pariatur modi sequi tempora, soluta veritatis magnam eligendi molestias recusandae voluptatem fugiat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt a suscipit praesentium ut eos tempora dolorum. Asperiores pariatur modi sequi tempora, soluta veritatis magnam eligendi molestias recusandae voluptatem fugiat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt a suscipit praesentium ut eos tempora dolorum. Asperiores pariatur modi sequi tempora, soluta veritatis magnam eligendi molestias recusandae voluptatem fugiat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt a suscipit praesentium ut eos tempora dolorum. Asperiores pariatur modi sequi tempora, soluta veritatis magnam eligendi molestias recusandae voluptatem fugiat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt a suscipit praesentium ut eos tempora dolorum. Asperiores pariatur modi sequi tempora, soluta veritatis magnam eligendi molestias recusandae voluptatem fugiat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt a suscipit praesentium ut eos tempora dolorum. Asperiores pariatur modi sequi tempora, soluta veritatis magnam eligendi molestias recusandae voluptatem fugiat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt a suscipit praesentium ut eos tempora dolorum. Asperiores pariatur modi sequi tempora, soluta veritatis magnam eligendi molestias recusandae voluptatem fugiat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt a suscipit praesentium ut eos tempora dolorum. Asperiores pariatur modi sequi tempora, soluta veritatis magnam eligendi molestias recusandae voluptatem fugiat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt a suscipit praesentium ut eos tempora dolorum. Asperiores pariatur modi sequi tempora, soluta veritatis magnam eligendi molestias recusandae voluptatem fugiat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt a suscipit praesentium ut eos tempora dolorum. Asperiores pariatur modi sequi tempora, soluta veritatis magnam eligendi molestias recusandae voluptatem fugiat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt a suscipit praesentium ut eos tempora dolorum. Asperiores pariatur modi sequi tempora, soluta veritatis magnam eligendi molestias recusandae voluptatem fugiat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt a suscipit praesentium ut eos tempora dolorum. Asperiores pariatur modi sequi tempora, soluta veritatis magnam eligendi molestias recusandae voluptatem fugiat!</p>
+        </div>
+        <div class="box aside">
+            <h1>titolo
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt a suscipit praesentium ut eos tempora dolorum. Asperiores pariatur modi sequi tempora, soluta veritatis magnam eligendi molestias recusandae voluptatem fugiat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt a suscipit praesentium ut eos tempora dolorum. Asperiores pariatur modi sequi tempora, soluta veritatis magnam eligendi molestias recusandae voluptatem fugiat!</p>
+        </div>
+        <div class="box footer">
+            <p>contatti <a href="#">arcangelo.ds@email.it</a></p>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

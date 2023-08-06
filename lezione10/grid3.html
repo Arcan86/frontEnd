@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+        .wrapper{
+            display: grid;
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            grid-template-columns:repeat(3, 1fr );
+            grid-gap: .5em;
+            /* grid-auto-rows: 100px; */
+         grid-auto-rows: minmax(100px,auto) ;
+       
+        }
+   
+        .wrapper > div {
+         background-color: #eee;
+         padding: 1em;
+         
+        }
+   
+        .wrapper > div:nth-child(odd) {
+         background-color: #ddd;
+        }
+
+        .nested{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 70px;
+            grid-gap: 1em;
+            
+        }
+
+        .nested > div{
+            border: 1px solid red;
+            padding: 1em;
+        }
+   
+       </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div>
+           <div class="nested">
+            <div>LOREM</div>
+            <div>LOREM</div>
+            <div>LOREM</div>
+            <div>LOREM</div>
+            <div>LOREM</div>
+            <div>LOREM</div>
+            <div>LOREM</div>
+            <div>LOREM</div>
+            <div>LOREM</div>
+           </div>
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde placeat optio amet esse porro. Totam, ipsam. Est sed laborum officiis? Enim consequatur animi unde modi ab sit quo porro voluptatem aperiam numquam minus deserunt quis fuga, nesciunt magni, quibusdam sequi.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elementi</title>
+    <style>
+        
+        /*------------------------- prova before e after ------------------------------------*/
+        
+        .nomi>p::before{
+            content: 'Nome : ';
+            font-weight: bold;
+            color: red;
+        }
+        
+        .nomi>p::after{
+            content: '!';
+            color: red;
+            font-weight: 900;
+        }
+        
+        /* ----------------------------prova first letter e first line ---------------------------------*/
+        
+        .paragrafo>p::first-letter{
+            font: bold;
+            font-size: 30px;
+        }
+        
+        .paragrafo>p::first-line{
+            color: red;
+        }
+        
+        /* -------------------combinazione pseudo classe e pseudo elemento---------------------------------- */
+        
+        .paragrafo>p:hover::first-line{
+            color: blue;
+        }
+        
+        /* -------------------------------------------prova selection------------------------------------------ */
+        
+        .paragrafo>p::selection{
+            background-color: yellow;
+        }
+        
+        /* --------------------place holder-------------------- */
+        input::placeholder{
+            font-size: 15px;
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- aggiunta nome con before e ! con after -->
+    
+    <h1>Pseudo Elementi</h1>
+    <h3>Before & After</h3>
+    <div class="nomi">
+        <p>Arcangelo</p>
+        <p>Emilia</p>
+        <p>Angelo</p>
+        <p>Antonio</p>
+        <p>Rita</p>
+        <p>Giuseppe</p>
+        <p>Adelaide</p>
+        <p>Sara</p>
+        <p>Prisco</p>
+        <p>Gennaro</p>
+        <p>Bernardino</p>
+    </div>
+    <hr>
+    
+    <!-- modifica prima lettera e prima linea, selezione con background, hover cambia colore -->
+    
+    <h3>First letter e First line</h3>
+    <div class="paragrafo">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam dolores veniam eaque deserunt, molestias molestiae! Aperiam tenetur eum architecto quo fuga beatae quisquam itaque, dicta totam commodi ducimus, libero provident?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam dolores veniam eaque deserunt, molestias molestiae! Aperiam tenetur eum architecto quo fuga beatae quisquam itaque, dicta totam commodi ducimus, libero provident?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam dolores veniam eaque deserunt, molestias molestiae! Aperiam tenetur eum architecto quo fuga beatae quisquam itaque, dicta totam commodi ducimus, libero provident?</p>
+    </div>
+    <hr>
+    
+    <!-- placeholder -->
+    
+    <input type="email" name="email" placeholder="arcangelo.ds@email.it">
+    <label for="email">Inserisci Email</label>
+    
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* 1 STEP : box sizing and lobotimized owl */
+
+:root {
+    box-sizing: border-box;
+  }
+  
+  *,
+  ::after,
+  ::before {
+    box-sizing: inherit;
+  }
+  
+  body * + * {
+    margin-top: 1.5em;
+  }
+  
+  /* 2 STEP : generic styling rules */
+  
+  body {
+    background: #bbb;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  header {
+    margin-bottom: 1.5em;
+  }
+  
+  header,
+  footer {
+    background-color: #1da3eb;
+    padding: 1.5em;
+    color: #fff;
+  }
+  
+  main {
+    background: #fff;
+    padding: 0 1.5em 1.5em 1.5em;
+  }
+  
+  header,
+  footer,
+  main {
+    border-radius: 10px;
+  }
+  
+  article {
+    background-color: #dedede;
+    padding: 1.5em;
+    float: left;
+    width: 50%;
+    margin: 0 1.5em 1.5em 0;
+    width: calc(50% - 1.5em);
+  }
+  
+  article h4 {
+    margin: 0;
+  }
+  
+  /* 3 STEP : applying float section */
+  
+  /* double container pattern */
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  
+  /* 4 STEP : fixing floating section */
+  
+  section::after {
+    display: block;
+    content: " ";
+    clear: both;
+  }
+
+   /* 5 STEP : article margins */
+
+
+/*fixes the margins of the edge children*/
+section {
+    margin-right: -1.5em;
+    margin-bottom: -1.5em;
+}
+
+/* 6 STEP : Fixes collapsing margin of section title */
+
+section::before {
+    display: table;
+    content: " ";
+  }
+  
+  /* 7 STEP : grid row clearfix */
+  
+  .articles > :nth-child(2n + 1) {
+    clear: left;
+  }
+
+  article> img{
+    float: left;
+    margin: 0 1.5em 1.5em;
+  }
+
+  .articles .article-body{
+    overflow: auto;
+    /* writing-mode: sideways-lr; */
+  }
+
+  
