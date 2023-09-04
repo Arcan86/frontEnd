@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wall Street Journal</title>
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  
+  <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Inter&family=Josefin+Sans:wght@300&family=Lobster&family=Open+Sans:ital@0;1&family=Orbitron:wght@500&family=Playfair+Display&display=swap');
+    
+    h1{
+      font-family: 'Playfair Display', serif;
+      
+    }
+    
+    .menu-bar a{
+      color: grey;
+      font-size: small;
+      margin-top: -20px;
+      
+    }
+    
+    .cards_index_borsa a{
+      font-size: 12px;
+      color: grey;
+    }
+    
+    article p{
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+      
+    }
+    
+    article h2,h3,h4{
+      font-family: 'Playfair Display', serif;
+    }
+    
+  </style>
+  
+</head>
+<body> 
+
+
+  <!--
+    navbar-primary
+    header + icone social
+    navbar-menu
+    cards
+    links
+    
+    main
+    tre colonne (responsive)
+    nella colnna di destra una pubblicità
+    
+    articoli con icone, links, colori,
+    
+    ...
+    footer
+    
+  -->
+  
+  
+  <!-- navbar primary -->
+
+  <nav class="navbar navbar-expand bg-dark" style= "height: 25px">
+    
+    <ul class="navbar-nav  text-light">
+      <li class="nav-item">
+        <a class="nav-link active text-light ms-5"
+        aria-current="page"
+        href="#">WSJ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Barron's</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">MarketWatch</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">IBD</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <!-- fine navbar primary -->
+  
+  <!-- inizio header -->
+  
+  <header>
+    
+        <div class="container">
+          <h1 class="text-center fw-bold display-4 d-none d-lg-block d-xl-block">THE WALL STREET JOURNAL.</h1>
+          <h1 class="text-center  d-md-block d-lg-none">WSJ</h1>
+        </div>
+        <!-- <div class="col-2">
+          <button type="button" class="btn btn-primary">Subscribe</button>
+          <button type="button" class="btn btn-light border-dark fw-semibold">Sign In</button>
+        </div> -->
+      </div>
+    </div>
+    
+    <!-- secondary bar -->
+    
+    <div class="container d-none d-lg-block  menu-bar d-lg-flex justify-content-center">
+      <ul class="nav">
+        
+        <li class="nav-item dropdown">
+          <a
+          class="nav-link dropdown-toggle"
+          data-bs-toggle="dropdown"
+          href="#"
+          role="button"
+          aria-expanded="false"
+          >English Edition</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Print Edition</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Video</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Audio</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Latest Headlines</a>
+        </li>
+        
+        
+        <li class="nav-item dropdown">
+          <a
+          class="nav-link dropdown-toggle"
+          data-bs-toggle="dropdown"
+          href="#"
+          role="button"
+          aria-expanded="false"
+          >More</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+            
+          </ul>
+          
+        </li>
+      </ul>
+   
+    </div>
+  </div>
+  
+  <!-- terza navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light menu-bar" aria-label="Third navbar example">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample03">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">World</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Business</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">U:S:</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Politics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Economy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tech</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Finance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Opinion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Arts & Culture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Lifestyle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Real Estate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Personal Finance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Health</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Science</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Style</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sport</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          </ul>
+      </div>
+</div>
+  </nav>
+</header>
+  <!-- fine terza navbar -->
+  <!-- fine header -->
+  
+  <!-- card borsa -->
+  
+  <div class="container d-none d-lg-block d-xl-block">
+    <div class="row d-flex justify-content-center">
+      <div class="alert alert-dark  mx-1 lh-1 my-2 text-center" role="alert" style="width: 11em; height: 70px; font-size: 12px;">
+        <p class="fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+        </svg> DJIA Futures</p>
+        <p class="text-success fw-bold ">35066.00 <span class="opacity-50">0.31%</span></p> 
+      </div>
+
+      <div class="alert alert-dark  mx-1 lh-1 my-2 text-center" role="alert" style="width: 11em; height: 70px; font-size: 12px;">
+        <p class="fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+        </svg> DJIA Futures</p>
+        <p class="text-success fw-bold ">35066.00 <span class="opacity-50">0.31%</span></p> 
+      </div>
+      <div class="alert alert-dark  mx-1 lh-1 my-2 text-center" role="alert" style="width: 11em; height: 70px; font-size: 12px;">
+        <p class="fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+        </svg> DJIA Futures</p>
+        <p class="text-success fw-bold ">35066.00 <span class="opacity-50">0.31%</span></p> 
+      </div>
+
+      <div class="alert alert-dark  mx-1 lh-1 my-2 text-center" role="alert" style="width: 11em; height: 70px; font-size: 12px;">
+        <p class="fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+        </svg> DJIA Futures</p>
+        <p class="text-success fw-bold ">35066.00 <span class="opacity-50">0.31%</span></p> 
+      </div>
+      <div class="alert alert-dark  mx-1 lh-1 my-2 text-center" role="alert" style="width: 11em; height: 70px; font-size: 12px;">
+        <p class="fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+        </svg> DJIA Futures</p>
+        <p class="text-success fw-bold ">35066.00 <span class="opacity-50">0.31%</span></p> 
+      </div>
+
+      <div class="alert alert-dark  mx-1 lh-1 my-2 text-center" role="alert" style="width: 11em; height: 70px; font-size: 12px;">
+        <p class="fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+        </svg> DJIA Futures</p>
+        <p class="text-success fw-bold ">35066.00 <span class="opacity-50">0.31%</span></p> 
+      </div>
+      <div class="alert alert-dark  mx-1 lh-1 my-2 text-center" role="alert" style="width: 11em; height: 70px; font-size: 12px;">
+        <p class="fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+        </svg> DJIA Futures</p>
+        <p class="text-success fw-bold ">35066.00 <span class="opacity-50">0.31%</span></p> 
+      </div>
+
+      <div class="alert alert-dark  mx-1 lh-1 my-2 text-center" role="alert" style="width: 11em; height: 70px; font-size: 12px;">
+        <p class="fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+        </svg> DJIA Futures</p>
+        <p class="text-success fw-bold ">35066.00 <span class="opacity-50">0.31%</span></p> 
+      </div>
+
+      
+    </div>
+  </div> 
+  
+  <!-- fine card borsa -->
+  
+  <!-- sezione notizie -->
+  
+  <main class="container my-5  ">
+    <div class="row g-5 mx-auto">
+      
+      <div class="col-1"></div> <!--div per centrare il contenuto/colonne bootstrap avanzate-->
+      
+      <!-- articoli a sinistra -->
+      
+      <div class="col-3 p-3">
+        <!-- primo articolo -->
+        <article class="border-bottom">
+          <header>
+            <h3> WSJ NEWS EXCLUSIVE
+              Trump Is Top Choice for Nearly 60% of GOP Voters</h3>
+              <p>
+                Donald Trump has expanded his dominating lead for the Republican presidential nomination, a new Wall Street Journal poll shows, as GOP primary voters overwhelmingly see his four criminal cases as lacking merit.
+              </p>
+            </header>
+          </article>
+          <!-- secondo articolo -->
+          <article class="border-bottom">
+            <header>
+              <h3> WSJ NEWS EXCLUSIVE
+                Trump Is Top Choice for Nearly 60% of GOP Voters</h3>
+                <p>
+                  Donald Trump has expanded his dominating lead for the Republican presidential nomination, a new Wall Street Journal poll shows, as GOP primary voters overwhelmingly see his four criminal cases as lacking merit.
+                </p>
+              </header>
+            </article>
+            <!-- terzo articolo -->
+            <article class="border-bottom">
+              <header>
+                <h3> WSJ NEWS EXCLUSIVE
+                  Trump Is Top Choice for Nearly 60% of GOP Voters</h3>
+                  <p>
+                    Donald Trump has expanded his dominating lead for the Republican presidential nomination, a new Wall Street Journal poll shows, as GOP primary voters overwhelmingly see his four criminal cases as lacking merit.
+                  </p>
+                </header>
+              </article>
+              <!-- quarto articolo -->
+              <article class="border-bottom">
+                <header>
+                  <h3> WSJ NEWS EXCLUSIVE
+                    Trump Is Top Choice for Nearly 60% of GOP Voters</h3>
+                    <p>
+                      Donald Trump has expanded his dominating lead for the Republican presidential nomination, a new Wall Street Journal poll shows, as GOP primary voters overwhelmingly see his four criminal cases as lacking merit.
+                    </p>
+                  </header>
+                </article>
+                <!-- quinto articolo -->
+                <article class="border-bottom">
+                  <header>
+                    <h3> WSJ NEWS EXCLUSIVE
+                      Trump Is Top Choice for Nearly 60% of GOP Voters</h3>
+                      <p>
+                        Donald Trump has expanded his dominating lead for the Republican presidential nomination, a new Wall Street Journal poll shows, as GOP primary voters overwhelmingly see his four criminal cases as lacking merit.
+                      </p>
+                    </header>
+                  </article>
+                  <article class="border-bottom">
+                    <header>
+                      <h3> WSJ NEWS EXCLUSIVE
+                        Trump Is Top Choice for Nearly 60% of GOP Voters</h3>
+                        <p>
+                          Donald Trump has expanded his dominating lead for the Republican presidential nomination, a new Wall Street Journal poll shows, as GOP primary voters overwhelmingly see his four criminal cases as lacking merit.
+                        </p>
+                      </header>
+                    </article>
+                    <article class="border-bottom">
+                      <header>
+                        <h3> WSJ NEWS EXCLUSIVE
+                          Trump Is Top Choice for Nearly 60% of GOP Voters</h3>
+                          <p>
+                            Donald Trump has expanded his dominating lead for the Republican presidential nomination, a new Wall Street Journal poll shows, as GOP primary voters overwhelmingly see his four criminal cases as lacking merit.
+                          </p>
+                        </header>
+                      </article>
+                    </div>
+                    <!-- fine articolo di sinistra -->
+                    
+                    <!-- articolo centrale -->
+                    
+                    <div class="col-4 p-3">
+                      <article class="border-end">
+                        <img class="img-fluid" src="assets/russian-fortification.png" alt="">
+                        <h4>Russia’s Vast Fortifications in Ukraine, Visualized</h4>
+                        <p>Ukrainian troops will have to overcome a multilayered Russian defensive line that includes trenches, anti-tank ditches and dragon’s teeth.</p>
+                      </article>
+                      <!-- secondo articolo -->
+                      <article class="border-bottom text-center">
+                        <img class="img-fluid" src="assets/iphone.png" alt="">
+                        <h4>This Part of Ukraine’s Counteroffensive Is Pressing Forward, With Little Western Help</h4>
+                        <p>Apple’s launch event is coming up, but if your device supports iOS 17 and just needs a new battery, you can skip the new model. &nbsp;<span><img src="assets/clock.svg" alt="">  1 min read</span></p>
+                      </article>
+                      <!-- terzo articolo -->
+                      <article class="border-bottom text-center">
+                        <img class="img-fluid" src="assets/ukraine.png" alt="">
+                        <h4>Why You Should—or Shouldn’t—Upgrade to the iPhone 15</h4>
+                        <p>Ukraine has retaken a handful of villages in the eastern Donetsk region, but the West is questioning Kyiv’s decision to attack on multiple axes. &nbsp;<span><img src="assets/clock.svg" alt="">  1 min read</span></p>
+                      </article>
+                    </div>
+                    
+                    <!-- fine articolo centrale -->
+                    
+                    <!-- inizio articolo di destra -->
+                    
+                    <div class="col-3 p-3">
+                      <article class="border-bottom">
+                        <img class="img-fluid" src="assets/jeffrey.png" alt="">
+                        <figcaption>Epstein Files</figcaption>
+                        <h3>
+                          Who Are the Names in Jeffrey Epstein’s Calendar?</h3>
+                          
+                        </article>
+                        <h3 class="text-secondary">Opinion<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-caret-right" viewBox="0 0 16 16">
+                          <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                        </svg></h3>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item"><h6>Mitch McConnell Agonistes</h6>
+                            <cite>By The Editorial Board | Review & Outlook</cite> </li>
+                            <li class="list-group-item"><h6>Mitch McConnell Agonistes</h6>
+                              <cite>By The Editorial Board | Review & Outlook</cite> </li>
+                              <li class="list-group-item"><h6>Mitch McConnell Agonistes</h6>
+                                <cite>By The Editorial Board | Review & Outlook</cite> </li>
+                                <li class="list-group-item"><h6>Mitch McConnell Agonistes</h6>
+                                  <cite>By The Editorial Board | Review & Outlook</cite> </li>
+                                  <li class="list-group-item"><h6>Mitch McConnell Agonistes</h6>
+                                    <cite>By The Editorial Board | Review & Outlook</cite> </li>
+                                    
+                                  </ul>
+                                </div>
+                                
+                              </div>
+                              
+                            </main>
+                            
+                            <!-- inizio footer -->
+                            
+                            <footer class="bg-dark text-center text-white">
+                              <!-- Grid container -->
+                              <div class="container p-4">
+                                <!-- Section: Social media -->
+                                
+                                <section class="mb-4">
+                                  <!-- Facebook -->
+                                  <a <i class="bi bi-facebook" style="font-size: 2rem; color: rgb(219, 219, 233);"></i></a>
+                                  
+                                  <!-- Twitter -->
+                                  <a <i class="bi bi-twitter" style="font-size: 2rem; color: rgb(219, 219, 233);"></i></a>
+                                  
+                                  <!-- Google -->
+                                  <a <i class="bi bi-google" style="font-size: 2rem; color: rgb(219, 219, 233);"></i></a>
+                                  
+                                  <!-- Instagram -->
+                                  <a <i class="bi bi-instagram" style="font-size: 2rem; color: rgb(219, 219, 233);"></i></a>
+                                  
+                                  <!-- Linkedin -->
+                                  <a <i class="bi bi-linkedin" style="font-size: 2rem; color: rgb(219, 219, 233);"></i></a>
+                                  <!-- whatsapp -->
+                                  <a <i class="bi bi-whatsapp" style="font-size: 2rem; color: rgb(229, 244, 226);"></i></a>
+                                </section>
+                                <!-- Section: Social media -->
+                                
+                                <!-- Section: Form -->
+                                <section class="">
+                                  <form action="">
+                                    <!--Grid row-->
+                                    <div class="row d-flex justify-content-center">
+                                      <!--Grid column-->
+                                      <div class="col-auto">
+                                        <p class="pt-2">
+                                          <strong>Sign up for our newsletter</strong>
+                                        </p>
+                                      </div>
+                                      <!--Grid column-->
+                                      
+                                      <!--Grid column-->
+                                      <div class="col-md-5 col-12">
+                                        <!-- Email input -->
+                                        <div class="form-outline form-white mb-4">
+                                          <input type="email" id="form5Example21" class="form-control" />
+                                          <label class="form-label" for="form5Example21">Email address</label>
+                                        </div>
+                                      </div>
+                                      <!--Grid column-->
+                                      
+                                      <!--Grid column-->
+                                      <div class="col-auto">
+                                        <!-- Submit button -->
+                                        <button type="submit" class="btn btn-outline-light mb-4">
+                                          Subscribe
+                                        </button>
+                                      </div>
+                                      <!--Grid column-->
+                                    </div>
+                                    <!--Grid row-->
+                                  </form>
+                                </section>
+                                <!-- Section: Form -->
+                                
+                                <!-- Section: Text -->
+                                <section class="mb-4">
+                                  <p class="fs-1 display-1">
+                                    THE WALL STREET JOURNAL.
+                                  </p>
+                                  <p>a Dow Jones Company</p>
+                                </section>
+                                <!-- Section: Text -->
+                                
+                                <!-- Section: Links -->
+                                <section class="">
+                                  <!--Grid row-->
+                                  <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                      <h5 class="text-uppercase">WSJ Membership</h5>
+                                      
+                                      <ul class="list-unstyled mb-0">
+                                        <li>
+                                          <a href="#!" class="text-white">Buy Side Exclusives</a>
+                                        </li>
+                                        <li>
+                                          <a href="#!" class="text-white">Subscription Options</a>
+                                        </li>
+                                        <li>
+                                          <a href="#!" class="text-white">Why Subscribe?</a>
+                                        </li>
+                                        <li>
+                                          <a href="#!" class="text-white">Corporate Subscriptions</a>
+                                        </li>
+                                        <li>
+                                          <a href="#!" class="text-white">Corporate Subscriptions</a>
+                                        </li>
+                                        <li>
+                                          <a href="#!" class="text-white">Corporate Subscriptions</a>
+                                        </li>
+                                        <li>
+                                          <a href="#!" class="text-white">Corporate Subscriptions</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <!--Grid column-->
+                                    
+                                    <!--Grid column-->
+                                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                      <h5 class="text-uppercase">Customer Service</h5>
+                                      
+                                      <ul class="list-unstyled mb-0">
+                                        <li>
+                                          <a href="#!" class="text-white">Link 1</a>
+                                        </li>
+                                        <li>
+                                          <a href="#!" class="text-white">Link 2</a>
+                                        </li>
+                                        <li>
+                                          <a href="#!" class="text-white">Link 3</a>
+                                        </li>
+                                        <li>
+                                          <a href="#!" class="text-white">Link 4</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <!--Grid column-->
+                                    
+                                    <!--Grid column-->
+                                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                      <h5 class="text-uppercase">Tools & Features</h5>
+                                      
+                                      <ul class="list-unstyled mb-0">
+                                        <li>
+                                          <a href="#!" class="text-white">Link 1</a>
+                                        </li>
+                                        <li>
+                                          <a href="#!" class="text-white">Link 2</a>
+                                        </li>
+                                        <li>
+                                          <a href="#!" class="text-white">Link 3</a>
+                                        </li>
+                                        <li>
+                                          <a href="#!" class="text-white">Link 4</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <!--Grid column-->
+                                    
+                                    <!--Grid column-->
+                                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                      <h5 class="text-uppercase">Ads</h5>
+                                      
+                                      <ul class="list-unstyled mb-0">
+                                        <li>
+                                          <a href="#!" class="text-white">Link 1</a>
+                                        </li>
+                                        <li>
+                                          <a href="#!" class="text-white">Link 2</a>
+                                        </li>
+                                        <li>
+                                          <a href="#!" class="text-white">Link 3</a>
+                                        </li>
+                                        <li>
+                                          <a href="#!" class="text-white">Link 4</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <!--Grid column-->
+                                  </div>
+                                  <!--Grid row-->
+                                </section>
+                                <!-- Section: Links -->
+                              </div>
+                              <!-- Grid container -->
+                              
+                            </footer>
+                            <!-- Footer -->
+                            <!-- secondo footer -->
+                            <footer class="text-center text-white" style="background-color: #212324;">
+                              <!-- Grid container -->
+                              <div class="container p-4">
+                                <!-- Section: Images -->
+                                <section class="">
+                                  <div class="row">
+                                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                                      <div
+                                      class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                                      data-ripple-color="light"
+                                      >
+                                      <img
+                                      src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp"
+                                      class="w-100"
+                                      />
+                                      <a href="#!">
+                                        <div
+                                        class="mask"
+                                        style="background-color: rgba(251, 251, 251, 0.2);"
+                                        ></div>
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                                    <div
+                                    class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                                    data-ripple-color="light"
+                                    >
+                                    <img
+                                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/111.webp"
+                                    class="w-100"
+                                    />
+                                    <a href="#!">
+                                      <div
+                                      class="mask"
+                                      style="background-color: rgba(251, 251, 251, 0.2);"
+                                      ></div>
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                                  <div
+                                  class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                                  data-ripple-color="light"
+                                  >
+                                  <img
+                                  src="https://mdbcdn.b-cdn.net/img/new/fluid/city/112.webp"
+                                  class="w-100"
+                                  />
+                                  <a href="#!">
+                                    <div
+                                    class="mask"
+                                    style="background-color: rgba(251, 251, 251, 0.2);"
+                                    ></div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                                <div
+                                class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                                data-ripple-color="light"
+                                >
+                                <img
+                                src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp"
+                                class="w-100"
+                                />
+                                <a href="#!">
+                                  <div
+                                  class="mask"
+                                  style="background-color: rgba(251, 251, 251, 0.2);"
+                                  ></div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                              <div
+                              class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                              data-ripple-color="light"
+                              >
+                              <img
+                              src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp"
+                              class="w-100"
+                              />
+                              <a href="#!">
+                                <div
+                                class="mask"
+                                style="background-color: rgba(251, 251, 251, 0.2);"
+                                ></div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                            <div
+                            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                            data-ripple-color="light"
+                            >
+                            <img
+                            src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp"
+                            class="w-100"
+                            />
+                            <a href="#!">
+                              <div
+                              class="mask"
+                              style="background-color: rgba(251, 251, 251, 0.2);"
+                              ></div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- Section: Images -->
+                  </div>
+                  <!-- Grid container -->
+                  
+                  <!-- Copyright -->
+
+                  <div class="text-center p-3" style="background-color: rgba(23, 21, 21, 0.2);">
+                    © 2023 Copyright:
+                    <a class="text-white" href="https://www.wsj.com/">Dow Jones & Company, Inc. All Rights Reserved.</a>
+                  </div>
+
+                  <!-- Copyright -->
+
+                </footer>
+                
+                
+                <!-- script bootstrap -->
+
+                <script src="js/bootstrap.bundle.min.js"></script>
+
+              </body>
+              </html>
+              

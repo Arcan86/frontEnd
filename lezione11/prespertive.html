@@ -50,7 +50,7 @@
                 background-color: hsl(271, 49%, 54%, 0);
                 position: relative;
                 left: 0;
-                transform: perspective(25cm) rotateX(-180deg) rotateY(90deg);
+                transform: perspective(40cm) rotateX(-90deg) rotateY(210deg);
                 
             }
         }
@@ -77,6 +77,33 @@
             background-color: limegreen;
             transform: translate3d(0, 0, 50px);
         }
+        .bottom {
+            background-color: rgb(117, 8, 33);
+            transform: translate3d(0, -50px, 0);
+
+        }
+
+        .right {
+            background-color: rgb(247, 99, 14);
+            transform: translate3d(0px, 0px, -50px);   
+           }
+
+        .behind {
+            background-color: rgb(43, 14, 207);
+            transform: translate3d(30px, 0px, 50px);
+        }
+        .f {
+            background-color: rgb(43, 14, 207);
+            transform: translate3d(20px, 0px, 50px);
+        }
+        .g {
+            background-color: rgb(43, 14, 207);
+            transform: translate3d(10px, 0px, 50px);
+        }
+        .h {
+            background-color: rgb(43, 14, 207);
+            transform: translate3d(0px, 0px, 50px);
+        }
     </style>
 </head>
 
@@ -86,6 +113,11 @@
         <div class="face front">A</div>
         <div class="face top">B</div>
         <div class="face left">C</div>
+        <div class="face behind">D</div>
+        <div class="face bottom">E</div>
+        <div class="face f">F</div>
+        <div class="face g">G</div>
+        <div class="face h">H</div>
     </div>
 
     <p>With perspective (9cm):</p>
@@ -101,6 +133,7 @@
         <div class="face front">A</div>
         <div class="face top">B</div>
         <div class="face left">C</div>
+       
     </div>
 
 </body>
